@@ -1,0 +1,112 @@
+/* @font-face {
+  font-family: "DungGeunMo";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "DungGeunMo";
+  src: url("../fonts/DungGeunMo.woff");
+}
+
+* {
+  font-family: "DungGeunMo";
+}
+
+body {
+  background-color: black;
+  background-image: url("../images/3325.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 100px;
+  margin: 0;
+  padding: 0;
+  text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}
+
+h1 > span:first-child {
+  color: red;
+}
+
+h1 > span:nth-child(2) {
+  color: orange;
+}
+
+h1 > span:nth-child(3) {
+  color: yellow;
+}
+
+h1 > span:nth-child(4) {
+  color: green;
+}
+
+h1 > span:nth-child(5) {
+  color: blue;
+}
+
+h1 > span:last-child {
+  color: purple;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#game-canvas {
+  background-color: black;
+  border: 2px solid white;
+  /* width: 400px;
+  height: 800px; */
+}
+
+.pannel-container {
+  width: 400px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pannel-container:first-child {
+  align-items: end;
+  margin-right: 2%;
+  text-align: end;
+}
+
+.pannel-container:last-child {
+  margin-left: 2%;
+}
+
+#block-title {
+  width: 200px;
+  font-size: 60pt;
+  font-weight: bold;
+  color: white;
+}
+
+#next-block-canvas {
+  background-color: black;
+  border: 2px solid white;
+  width: 200px;
+  height: 200px;
+}
+
+#line-score {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
